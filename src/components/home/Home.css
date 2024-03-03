@@ -1,0 +1,71 @@
+.heroSection {
+    background-color: black;
+    padding: 40px;
+    border-radius: 8px;
+    margin: 20px;
+    color: white;
+    text-align: center; /* Center content */
+  }
+  
+  .heroButton {
+    background-color: red; /* More vibrant color */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Larger button */
+    font-size: 16px; /* Larger text */
+    cursor: pointer; /* Cursor indicates clickable */
+    text-decoration: none; /* Remove underline from links */
+    display: inline-block; /* Needed for anchor styling */
+    color: white; /* Text color */
+    border-inline-color: white;
+  }
+  
+  /* New class for the bio section */
+  .bioSection {
+    color: white;
+    padding: 20px;
+    margin-top: 20px; /* Space from the hero section */
+    text-align: center; /* Center content */
+    font-style: italic; /* Italicize bio text */
+  }
+
+.features-section {
+    color: #FFF; /* Adjust based on your color scheme */
+    background-color: #000; /* Example background color */
+    padding: 20px 0;
+  }
+  
+  .features-section svg {
+    fill: white; /* Gold color for icons, adjust as needed */
+    margin-bottom: 15px;
+  }
+  
+  .features-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: white; /* Example heading color */
+  }
+  
+  .features-section p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #CCCCCC; /* Light grey for paragraph text */
+  }
+  
+  .feature-col {
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-col:hover {
+    transform: translateY(-5px); /* Subtle lift effect on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .features-section h2 {
+      font-size: 1.25rem;
+    }
+  
+    .features-section p {
+      font-size: 0.9rem;
+    }
+  }
+  

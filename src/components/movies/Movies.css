@@ -1,0 +1,42 @@
+
+body {
+    font-family: "Anta", sans-serif; /* Updated to keep only one font-family declaration */
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    background-color: #1c1c1c; /* Fallback color in case the image fails to load */
+    background-image: url("./cinemas3.jpg"); /* Ensure the path to your image is correct */
+    background-size: cover; /* Cover ensures the background image covers the entire element */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+.container{
+    color: #1c1c1c;
+    width: 100%;
+    margin: 1em auto;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.grid{
+    display: grid;
+    margin-left: .5px;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 0.2rem;
+    justify-content: center;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.anta-regular {
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  

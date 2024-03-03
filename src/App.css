@@ -1,5 +1,11 @@
+
+
 .App {
   text-align: center;
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #1c1c1c;
 }
 
 .App-logo {
@@ -36,3 +42,4 @@
     transform: rotate(360deg);
   }
 }
+
