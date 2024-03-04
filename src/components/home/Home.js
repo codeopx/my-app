@@ -3,6 +3,8 @@ import { Container, Button, Row, Col } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import Movies from '../movies/Movies';
 import "./Home.css"
+import { Analytics } from "@vercel/analytics/react"
+
 const Home = () => {
   return (
     <div>
@@ -10,6 +12,7 @@ const Home = () => {
       {/* Hero Section */}
       <div className="heroSection">
         <Container style={{color: 'white'}}>
+          <Analytics />
           <h1>Welcome To Movie Maniac</h1>
           <p className="lead">"The Home Of Movies"</p>
           <Button variant="secondary" className="heroButton">
