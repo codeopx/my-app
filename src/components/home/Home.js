@@ -12,7 +12,7 @@ const Home = () => {
         <Container style={{color: 'white'}}>
           <h1>Welcome To Movie Maniac</h1>
           <p className="lead">"The Home Of Movies"</p>
-          <Button variant="primary" className="heroButton">
+          <Button variant="secondary" className="heroButton">
             <a href="movies" className="heroButton">Explore</a>
           </Button>
         </Container>

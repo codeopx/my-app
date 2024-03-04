@@ -8,7 +8,7 @@
   }
   
   .heroButton {
-    background-color: red; /* More vibrant color */
+    background-color: #1c1c1c; /* More vibrant color */
     border: none; /* Remove default border */
     padding: 10px 20px; /* Larger button */
     font-size: 16px; /* Larger text */
@@ -17,8 +17,11 @@
     display: inline-block; /* Needed for anchor styling */
     color: white; /* Text color */
     border-inline-color: white;
+    border-color: white;
   }
-  
+  .heroButton:hover{
+    background-color: black;
+  }
   /* New class for the bio section */
   .bioSection {
     color: white;

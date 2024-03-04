@@ -72,13 +72,15 @@ function App() {
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
               />
-              <button className="btn btn-outline-success" type="submit" style={{ color: 'white', borderColor: 'red' }}>Search</button>
+             <button className="btn btn-outline-success custom-hover" type="submit" style={{ color: 'white', borderColor: 'white', backgroundColor: "#1c1c1c" }}>Search</button>
+
             </form>
             <h1 className="motto">"The Home Of Movies"</h1>
           </div>
         </nav>
       </header>
 
+      https://github.com/codeopx/Movie-Maniac-React-Js.git
 
       <Routes>
         <Route path="/" element={<Home />} />

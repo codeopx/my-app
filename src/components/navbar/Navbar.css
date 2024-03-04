@@ -72,3 +72,8 @@
     display: none;
   }
 }
+
+.custom-hover:hover {
+  background-color: black !important; /* Change background color to blue on hover */
+  color: white !important; /* Keep text color white */
+}
