@@ -83,6 +83,15 @@ function App() {
         </nav>
       </header>
 
+         {/* Conditionally render the movies grid only if a search has been submitted */}
+         {searchSubmitted && (
+        <div className='grid'>
+          {movies.map((movieReq) =>
+            <MovieBox key={movieReq.id} {...movieReq} />)
+          }
+        </div>
+      )}
+
      
 
       <Routes>
@@ -91,14 +100,7 @@ function App() {
         <Route path="reviews" element={<Reviews />} />
       </Routes>
 
-      {/* Conditionally render the movies grid only if a search has been submitted */}
-      {searchSubmitted && (
-        <div className='grid'>
-          {movies.map((movieReq) =>
-            <MovieBox key={movieReq.id} {...movieReq} />)
-          }
-        </div>
-      )}
+   
     </BrowserRouter>
   );
 }
