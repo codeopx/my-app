@@ -83,14 +83,6 @@ function App() {
         </nav>
       </header>
 
-      https://github.com/codeopx/Movie-Maniac-React-Js.git
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="movies" element={<Movies />} />
-        <Route path="reviews" element={<Reviews />} />
-      </Routes>
-
          {/* Conditionally render the movies grid only if a search has been submitted */}
          {searchSubmitted && (
         <div className='grid'>
@@ -100,13 +92,19 @@ function App() {
         </div>
       )}
 
-     
+
+ 
 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="movies" element={<Movies />} />
         <Route path="reviews" element={<Reviews />} />
       </Routes>
+
+      
+     
+
+     
 
    
     </BrowserRouter>
