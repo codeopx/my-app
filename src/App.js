@@ -7,6 +7,7 @@ import { Reviews } from "./components/reviews/Reviews";
 import MovieBox from "./components/movies/MovieBox";
 import logo from "../src/assets/mvm2.jpg"
 
+
 const API_KEY = "18d058a684a4adb29783b5dede765b99";
 const BASE_URL = "https://api.themoviedb.org/3";
 
@@ -35,8 +36,10 @@ function App() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
 
   return (
+    
     <BrowserRouter>
       <header>
+      
         <nav className="navbar">
           <div className="container-fluid">
             {/* Logo */}
@@ -80,7 +83,7 @@ function App() {
         </nav>
       </header>
 
-      https://github.com/codeopx/Movie-Maniac-React-Js.git
+     
 
       <Routes>
         <Route path="/" element={<Home />} />
