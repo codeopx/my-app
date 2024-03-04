@@ -80,7 +80,7 @@ function App() {
         </nav>
       </header>
 
-      https://github.com/codeopx/Movie-Maniac-React-Js.git
+   
 
       <Routes>
         <Route path="/" element={<Home />} />
