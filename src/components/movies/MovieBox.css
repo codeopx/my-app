@@ -1,0 +1,15 @@
+/* MovieBox.css */
+
+/* Desktop view */
+@media (min-width: 992px) {
+    .movie-card {
+      /* Example: Increase padding */
+      padding: 20px;
+    }
+    .movie-img {
+      /* Adjust image size or aspect ratio */
+      height: auto;
+      max-height: 400px;
+    }
+  }
+  

@@ -5,6 +5,7 @@ import Home from "./components/home/Home";
 import Movies from "./components/movies/Movies";
 import { Reviews } from "./components/reviews/Reviews";
 import MovieBox from "./components/movies/MovieBox";
+import logo from "../src/assets/mvm2.jpg"
 
 const API_KEY = "18d058a684a4adb29783b5dede765b99";
 const BASE_URL = "https://api.themoviedb.org/3";
@@ -31,18 +32,38 @@ function App() {
     fetchMovies(query);
   };
 
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
+
   return (
     <BrowserRouter>
       <header>
-        <nav className="navbar bg-body-black">
+        <nav className="navbar">
           <div className="container-fluid">
-            <h1 className="navTitle" style={{ color: 'white' }}>Movie Maniac</h1>
-            <NavLink className="a" to="/">Home</NavLink>
-            <NavLink className="a" to="movies">Popular Movies</NavLink>
-            {/* Uncomment the line below if you wish to include the Reviews section in your navbar */}
-            {/* <NavLink className="a" to="reviews">Reviews</NavLink> */}
+            {/* Logo */}
+            <NavLink to="/">
+              <img src={logo} alt="Movie Maniac Logo" className="navbar-logo" />
+            </NavLink>
+          <h1 className="navTitle" style={{ color: 'white' }}>Movie Maniac</h1>
+          
+            <button
+              className="hamburger-menu"
+              onClick={() => setIsNavExpanded(!isNavExpanded)}
+            >
+              ☰
+            </button>
+
+           
+
+            <div className={`nav-links ${isNavExpanded ? "" : "hide"}`}>
+              <NavLink className="a" to="/" onClick={() => setIsNavExpanded(false)}>Home</NavLink>
+              <NavLink className="a" to="movies" onClick={() => setIsNavExpanded(false)}>Popular Movies</NavLink>
+              {/* Uncomment or add additional links as needed */}
+              {/* <NavLink className="a" to="reviews" onClick={() => setIsNavExpanded(false)}>Reviews</NavLink> */}
+            </div>
+              
+
             {/* Search Bar */}
-            <form onSubmit={searchMovies} className="d-flex">
+            <form onSubmit={searchMovies} className="d-flex justify-content-center" style={{marginLeft:20}}>
               <input
                 className="form-control me-2"
                 type="text"
@@ -57,6 +78,7 @@ function App() {
           </div>
         </nav>
       </header>
+
 
       <Routes>
         <Route path="/" element={<Home />} />

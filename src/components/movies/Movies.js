@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Container, Button, Row, Col } from 'react-bootstrap';
 import "./Movies.css";
 import MovieBox from './MovieBox';
 // import 'bootstrap/dist/css/bootstrap.min.css';
@@ -38,8 +39,19 @@ const Movies = () => {
           <MovieBox key={movieReq.id} {...movieReq} />)
         }
       </div>
+
+        {/* Footer */}
+        <footer className="bg-black text-light text-center p-3">
+        <Container>
+          <p style={{ color: "white" }}>© 2024 Movie Maniac Created By Toby Nosa-Omoregie. All rights reserved.</p>
+        </Container>
+      </footer>
     </div>
+
+    
   );
+
+
 }
 
 export default Movies;
